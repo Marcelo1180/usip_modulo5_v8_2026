@@ -15,10 +15,11 @@ urlpatterns = [
     #     'clase8',  views.index
     # )
     # path('', include(router.urls)),
-    # path('categoria', views.CategoriaViewSet.as_view({'get': 'list'})),
+    # path('categoria', views.CategoriaViewSet.as_view({'get': 'list', 'post': 'create'})),
+    # path('categoria/<int:pk>', views.CategoriaViewSet.as_view({'get': 'retrieve'})),
     path('categorias/cantidad', views.categoria_count),
     path('productos/filtrar/unidades', views.producto_en_unidades),
     path('reporte/productos', views.reporte_productos),
-    path('enviar/mensaje', views.enviar_mensaje),
+    # path('enviar/mensaje', views.enviar_mensaje),
 ]
 
